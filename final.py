@@ -2,6 +2,8 @@ import random
 import pyttsx3
 text_speech=pyttsx3.init()
 number=random.randrange(1,50)
+text_speech.say('Guess the number between 1 and 50')
+text_speech.runAndWait()
 guess=int(input('Guess the number between 1 and 50 :'))
 text_speech.say(guess)
 text_speech.runAndWait()
